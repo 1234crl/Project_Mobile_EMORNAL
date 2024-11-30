@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Emornal</string>
+    <string name="check">Check In</string>
+    <string name="learn">Learn</string>
+    <string name="statistic">Statistic</string>
+    <string name="profile">Profile</string>
+    <string name="emornal">Emornal</string>
+    <string name="getstarted">Get Started</string>
+    <string name="statistic1">Statistic</string>
+</resources>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".EmotionsActivity">
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2024.11.28"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintTop_toBottomOf="@id/tv_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Shake Button -->
+    <Button
+        android:id="@+id/btn_shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHAKE-IT!"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF8800"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_current_emotion">
+
+        <!-- Emotions Grid -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/grid_emotions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavender"
+            android:columnCount="4"
+            android:padding="12dp"
+            android:rowCount="4">
+
+
+            <!-- 16 Emotion Icons -->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_over"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_over_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Overwhelmed"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_happy"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_joy_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Happy"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_sad"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_sad_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Sad"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_anger"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_anger_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Anger"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_admiration"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_admiration_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Admiration"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_annoyance"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_annoyance_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Admiration"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_anticipation"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_anticipation_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Anticipation"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_ecstacy"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_ecstacy_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Ecstacy"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_interest"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_interest_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Interest"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_rage"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_rage_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Rage"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_serenity"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_serenity_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Serenity"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_insecure"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_insecure_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Insecure"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_depressed"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_depresi_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Depressed"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_panic"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_panic_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Panic"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_sick"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_sick_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Sick"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_margin="8dp">-->
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/emotion_tired"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:src="@mipmap/ic_tired_foreground" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Tired"-->
+            <!--                    android:textColor="#FFFFFF"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textSize="12sp" />-->
+            <!--            </LinearLayout>-->
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_current_emotion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Your Emotions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_shake" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
