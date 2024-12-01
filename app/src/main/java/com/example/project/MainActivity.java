@@ -1,6 +1,8 @@
 package com.example.project;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.CalendarView;
 import android.widget.Toast;
 
@@ -15,20 +17,25 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.project.databinding.ActivityMainBinding;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    private BottomNavigationView navView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Use ViewBinding to inflate the layout
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        Log.d("MainActivity", "Inflating layout...");
+//        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(R.layout.activity_main);
+        Log.d("MainActivity", "Layout inflated successfully.");
 
         // Find the BottomNavigationView in the layout
-        BottomNavigationView navView = binding.navView;
+        navView = findViewById(R.id.nav_view);
+
 
         // Set up AppBarConfiguration with the fragment IDs in the bottom navigation
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
@@ -42,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //CALENDAR
-        CalendarView calendarView = findViewById(R.id.calendar_view);
+//        CalendarView calendarView = findViewById(R.id.calendar_view);
 
 
 
