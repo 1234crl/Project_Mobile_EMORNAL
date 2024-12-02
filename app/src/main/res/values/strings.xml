@@ -29,4 +29,80 @@
     <string name="nov">November</string>
     <string name="dec">December</string>
 
+    <string name="news_title_1">Stress Management</string>
+    <string name="news_description_1">Learn how to manage stress effectively.</string>
+    <string name="news_duration_1">5 min</string>
+    <string name="news_detail_1">Stress is part of being human, and it can help motivate you to get things done. Even high stress from serious illness, job loss, a death in the family, or a painful life event can be a natural part of life. You may feel down or anxious, and that’s normal too for a while.
+
+Talk to your doctor if you feel down or anxious for more than several weeks or if it starts to interfere with your home or work life. Therapy, medication, and other strategies can help.
+
+In the meantime, there are things you can learn to help you manage stress before it gets to be too much. These tips may help you keep stress at bay:
+
+Keep a positive attitude.
+Accept that there are events that you cannot control.
+Be assertive instead of aggressive. Assert your feelings, opinions, or beliefs instead of becoming angry, defensive, or passive.
+Learn to manage your time more effectively.
+Set limits appropriately and say no to requests that would create excessive stress in your life.
+Make time for hobbies and interests.
+Don\'t rely on alcohol, drugs, or compulsive behaviors to reduce stress. Drugs and alcohol can stress your body even more.
+Seek out social support. Spend enough time with those you love.
+Seek treatment with a psychologist or other mental health professional trained in stress management or biofeedback techniques to learn more healthy ways of dealing with the stress in your life.</string>
+
+    <string name="news_title_2">Mindfulness Techniques</string>
+    <string name="news_description_2">Simple mindfulness practices for daily life.</string>
+    <string name="news_duration_2">7 min</string>
+    <string name="news_detail_2">
+        1. Start your day with a mindful morning routine. Take a few minutes to stretch, breathe, and set positive intentions for the day ahead.
+2. Eat mindfully. Slow down, savor each bite, and pay attention to the taste, texture, and aroma of your food.
+3.Take short mindfulness breaks throughout the day. Pause for a few moments to focus on your breath, observe your surroundings, and bring your attention back to the present moment.
+4.Practice mindful listening. When someone is speaking to you, give them your full attention. Avoid interrupting or thinking about what you will say next.
+5.Engage in mindful walking. Take a walk in nature and pay attention to the sights, sounds, and sensations around you. Feel the ground beneath your feet with each step.
+6.Unplug from technology. Set aside dedicated time each day to disconnect from screens and engage in activities that promote mindfulness, such as reading, journaling, or practicing yoga.
+7.Cultivate gratitude. Take a few moments each day to reflect on what you are grateful for. Write down three things you appreciate and why.
+8.Practice mindful breathing. Take deep breaths, focusing on the sensation of the breath entering and leaving your body. This can help calm the mind and reduce stress.
+9. Bring mindfulness to everyday tasks. Whether you are washing dishes, brushing your teeth, or folding laundry, bring your full attention to the task at hand.
+10.End your day with a mindful evening routine. Reflect on your day, let go of any negative thoughts or emotions, and practice self-care activities that promote relaxation and well-being.</string>
+
+    <string name="news_title_3">Relaxation Methods</string>
+    <string name="news_description_3">Discover effective ways to relax.</string>
+    <string name="news_duration_3">10 min</string>
+    <string name="news_detail_3">
+        1. Reduction in stress (and cortisol – the stress hormone) levels
+2.Lowered blood pressure
+3. Lowered heart rate
+4.Lower fatigue
+5.Raised energy levels
+6.Feeling more alert
+7.Improved mood
+8.Help to manage pain
+9. Reduction in negative emotions such as anger or anxiety
+10. Improved concentration levels</string>
+
+    <string name="news_title_4">Can not extract resource from com.android.aaptcompiler.ParsedResource@6f306c26.
+</string>
+    <string name="news_description_4">Discover effective ways to relax.</string>
+    <string name="news_duration_4">10 min</string>
+    <string name="news_detail_4"> 1.Meditasi dan mindfulness.
+2. Olahraga ringan (jalan kaki, yoga, peregangan).
+3. Mendengarkan musik menenangkan.
+4.Mandi air hangat atau spa.
+5.Menghabiskan waktu di alam terbuka.
+6. Membaca buku atau menonton film.
+7.Berbicara dengan teman atau keluarga.</string>
+
+    <string name="news_title_5">Self-Esteem Is Based on What Others Think About You</string>
+    <string name="news_description_5">Does repeating a positive phrase called an affirmation out loud or to oneself change one\'s feelings or behavior? Some psychologists believe the answer to this question is yes. Others remain skeptical. To answer this question we need to look at the science behind self-affirmations.</string>
+    <string name="news_duration_5">6 min</string>
+    <string name="news_detail_5">Mengulang afirmasi positif, baik secara lisan maupun dalam hati, dapat memberikan dampak yang\'s  signifikan pada seseorang. Dengan mengganti pola pikir negatif atau membatasi dengan afirmasi yang lebih positif, seseorang bisa membangun kepercayaan diri dan meningkatkan harga diri. \'s Praktik ini dapat membantu merubah pola pikir di otak, seiring dengan pengulangan afirmasi yang membentuk kebiasaan berpikir baru yang lebih membangun. \'s Selain itu, afirmasi juga dapat mengurangi stres, meningkatkan motivasi, dan memperbaiki suasana hati dengan mengarahkan pikiran pada hal-hal positif dan tujuan yang diinginkan. \'s Jika dilakukan secara konsisten, afirmasi positif dapat mempengaruhi perubahan dalam cara seseorang merespon tantangan dan mencapai tujuannya.</string>
+
+    <string name="news_title_6">Relaxation Methods</string>
+    <string name="news_description_6">What is self-esteem? Is it something related to how you evaluate yourself, or is it based on how others think about you? Well, there are numerous theories of self-esteem in psychological science, as well as criticism of the construct itself. While these theories often diverge on some points, they all share a common idea: in one way or another, our self-esteem is dependent on our social context and relationships.</string>
+    <string name="news_duration_6">8 min</string>
+    <string name="news_detail_6">Self-esteem refers to the way an individual perceives and values themselves. It is the overall sense of self-worth or personal value, and it influences how a person thinks, feels, and behaves in various situations. People with high self-esteem tend to have a positive self-image and are confident in their abilities, whereas those with low self-esteem often struggle with self-doubt, \'s criticism, and feelings of inadequacy. </string>
+
+    <string name="news_title_7">3 Ways You’re Sabotaging Your Relationships</string>
+    <string name="news_description_7">As a couples therapist, I’ve seen it repeatedly: people longing for love but unknowingly pushing it away. They find themselves stuck in cycles of conflict, disappointment, or loneliness, often blaming their partners or circumstances. But when we peel back the layers, the saboteur is usually within. The good news? Once you recognize your patterns, you can rewrite the script. Let’s explore three common ways people sabotage their love lives—and what you can do instead.</string>
+    <string name="news_duration_7">8 min</string>
+    <string name="news_detail_7">As a couples therapist, you\'ve likely observed how self-esteem plays a critical role in relationships. \'s When one or both partners struggle with low self-esteem, it can manifest in various ways within the relationship. For example, individuals with low self-esteem may have difficulty expressing their needs, setting boundaries, or feeling worthy of love and respect. This can lead to patterns of self-sabotage, \'s insecurity, and constant seeking of validation from their partner.</string>
+
 </resources>

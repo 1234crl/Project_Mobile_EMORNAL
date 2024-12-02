@@ -99,8 +99,6 @@ public class EmotionsActivity extends AppCompatActivity {
 
         //Menampilkan daftar Emotion dari Database
         emotionsViewModel.getAllEmotions().observe(this, emotions -> {
-
-
             emotionsAdapter.updateData(emotions); // Update EmotionAdapter
             detailDiaryAdapter.setEmotionList(emotions); // Update DetailDiaryAdapter dengan data Emotions
         });
